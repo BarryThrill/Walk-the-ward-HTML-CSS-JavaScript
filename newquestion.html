@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <title>Walk the Ward</title>
+    <!-- Boostrap CSS: Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body id="newQuestionPage">
+    <div id="wrapperNewQuestion">
+        <div class="col-xs-12 col-sm-12">
+            <h1 class="title corner">Walk the Ward - Admin</h1>
+        </div>
+        <div class="col-xs-12 col-sm-12 guide informationAdmin">
+            <p>Välj vilken kategori du vill spara din fråga i. Om kategorin inte existerar måste du skapa kategorin tillsammans med frågan! Välj då "Ny kategori" och fyll i de olika fälten. Finns kategorin behöver du bara skriva in frågan och alternativen och lämna "Skriv in en ny kategori" fältet tom. Ange också vilken station frågan är och vilken QR id frågan ska ha.</p>
+        </div>
+        <div class="col-xs-12 col-sm-12">
+            <select id="category">
+                <option value="" disabled selected hidden>Välj kategori</option>
+                <option value="new">Ny kategori</option>
+            </select>
+        </div>
+        <div class="col-xs-12 col-sm-12">
+            <input id="newQuestion" type="text" placeholder="Skriv in din fråga" class="form smallerText">
+        </div>
+        <div class="col-xs-12 col-sm-12">
+            <input id="correctAnswer" type="text" placeholder="Skriv in rätt svar" class="form smallerText">
+        </div>
+        <div class="col-xs-12 col-sm-12">
+            <input id="alt2" type="text" placeholder="Skriv in alternativ 2" class="form smallerText">
+        </div>
+        <div class="col-xs-12 col-sm-12">
+            <input id="alt3" type="text" placeholder="Skriv in alternativ 3" class="form smallerText">
+        </div>
+        <div class="col-xs-12 col-sm-12">
+            <input id="alt4" type="text" placeholder="Skriv in alternativ 4" class="form smallerText">
+        </div>
+        <div class="col-xs-12 col-sm-12">
+            <input id="locationNbr" type="text" placeholder="Skriv in station nummer" class="form smallerText">
+        </div>
+        <div class="col-xs-12 col-sm-12">
+            <input id="qrId" type="text" placeholder="Skriv in QR id" class="form smallerText">
+        </div>
+        <div class="col-xs-12 col-sm-12">
+            <input id="newCategory" type="text" placeholder="Skriv in en ny kategori" class="form smallerText">
+        </div>
+        <div class="col-xs-12 col-sm-12">
+            <button id="saveQuestion" class="form">Spara</button>
+        </div>
+        <div class="col-xs-12 col-sm-12">
+            <a href="admin.html" class="form">Tillbaka</a>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript" src="underscore-min-1.3.3.js"></script>
+    <script type="text/javascript" src="backbone-min-0.9.2.js"></script>
+    <script type="text/javascript" src="https://www.parsecdn.com/js/parse-1.2.3.min.js"></script>
+    <script src="adminscript.js"></script>
+</body>
+
+</html>
